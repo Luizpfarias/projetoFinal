@@ -5,4 +5,17 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page10"></ion-content>
+<ion-content padding id="page10">
+  <h1>Tarefas</h1>
+
+  <ion-list>
+    <li *ngFor="let tarefa of arrayTarefa">
+      {{tarefa.dataInicio}}, {{tarefa.dataFim}}, {{tarefa.descricao}}
+    </li>
+  </ion-list>
+</ion-content>
+
+<!--<li *ngFor="let tarefa of arrayTarefa">
+    {{tarefa.dataInicio}}, {{tarefa.dataFim}}, {{tarefa.descricao}}
+  </li>
+--> 

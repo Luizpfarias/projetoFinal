@@ -12,7 +12,7 @@ import { NovaTarefaPage } from '../pages/nova-tarefa/nova-tarefa';
 import { CalendarioPage } from '../pages/calendario/calendario';
 import { CertificadosPage } from '../pages/certificados/certificados';
 import { NovoCertificadoPage } from '../pages/novo-certificado/novo-certificado';
-
+import { HttpClientModule } from '@angular/common/http'; //httpimport
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,7 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule //hope for the best
   ],
   bootstrap: [IonicApp],
   entryComponents: [

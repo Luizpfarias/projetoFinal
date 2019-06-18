@@ -12,22 +12,22 @@
         <ion-label>
           Data Inicial
         </ion-label>
-        <ion-input type="date" placeholder=""></ion-input>
+        <ion-input type="date" placeholder="" [(ngModel)]="startDate" name="startDate"></ion-input>
       </ion-item>
       <ion-item id="novaTarefa-input25">
         <ion-label>
           Data Final
         </ion-label>
-        <ion-input type="date" placeholder=""></ion-input>
+        <ion-input type="date" placeholder="" [(ngModel)]="endDate" name="endDate"></ion-input>
       </ion-item>
       <ion-item id="novaTarefa-input26">
         <ion-label>
           Descrição
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="{{name}}" [(ngModel)]="tarefaDesc" name="tarefaDesc"></ion-input>
       </ion-item>
     </ion-list>
-    <button id="novaTarefa-button10" ion-button color="stable" block>
+    <button id="novaTarefa-button10" (click)="theTest()" ion-button color="stable" block>
       Criar tarefa
     </button>
   </form>
