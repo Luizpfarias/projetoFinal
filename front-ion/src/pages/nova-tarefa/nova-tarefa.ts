@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
-import { Headers, RequestOptions } from '@angular/http';
-import { Http } from '@angular/common/http';
-import { isRightSide } from 'ionic-angular/umd/util/util';
+
 
 @Component({
   selector: 'page-nova-tarefa',
@@ -17,13 +15,13 @@ export class NovaTarefaPage {
   startDate = '';
   endDate = '';
   postTarefa: any;
-  http: any;
+  //http: any;
 
 
 
   constructor(public navCtrl: NavController, public httpClient: HttpClient) {
     //can remove this later
-    this.name = "Descriçao da tarefa"
+    //this.name = "Descriçao da tarefa"
 
   }
 
@@ -48,8 +46,6 @@ public testPost(){
     console.log("big nono ", this.startDate, "é maior que ",this.endDate);
   }
 }
-
-
 
 public theTest(){
   var url = 'https://j8dykho86h.execute-api.sa-east-1.amazonaws.com/Dev/tarefa';

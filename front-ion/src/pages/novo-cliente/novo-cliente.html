@@ -12,47 +12,47 @@
         <ion-label>
           Nome
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="nome" name="nome"></ion-input>
       </ion-item>
       <ion-item id="novoCliente-input12">
         <ion-label>
           CNPJ
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="cnpj" name="cnpj"></ion-input>
       </ion-item>
       <ion-item id="novoCliente-input13">
         <ion-label>
           CPF
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="cpf" name="cpf"></ion-input>
       </ion-item>
       <ion-item id="novoCliente-input14">
         <ion-label>
           Endereço
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="endereco" name="endereco"></ion-input>
       </ion-item>
       <ion-item id="novoCliente-input15">
         <ion-label>
           Nome do contato
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="nomeContato" name="nomeContato"></ion-input>
       </ion-item>
       <ion-item id="novoCliente-input21">
         <ion-label>
           Telefone
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="telefone" name="telefone"></ion-input>
       </ion-item>
       <ion-item id="novoCliente-input22">
         <ion-label>
           Email
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="email" name="email"></ion-input>
       </ion-item>
     </ion-list>
-    <button id="novoCliente-button7" ion-button color="stable" block>
-      Criar
+    <button id="novoCliente-button7" (click)="clienTest()" ion-button color="stable" block>
+      Criar Cliente
     </button>
   </form>
 </ion-content>

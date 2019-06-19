@@ -12,7 +12,11 @@
         <ion-label>
           Cliente
         </ion-label>
-        <ion-select name=""></ion-select>
+        <ion-select [(ngModel)]="nomeCliente" name="nomeCliente">
+            <ion-option *ngFor="let cliente of arrayClientes" value="{{cliente.nome}}">
+                {{cliente.nome}}
+              </ion-option>
+        </ion-select>
       </ion-item>
       <ion-item id="novoCertificado-select2">
         <ion-label>
@@ -41,7 +45,7 @@
       </ion-item>
     </ion-list>
     <button id="novoCertificado-button13" ion-button color="stable" block>
-      Sign up
+      Criar Certificado
     </button>
   </form>
 </ion-content>
