@@ -12,13 +12,12 @@ Em um exemplo de solicitação para listar todas as tarefas:
 1. A função Lambda é executada e recupera os dados necessários do database, retornando um JSON.
 1. Este JSON é devolvido para o usuário em um formato legível.
 
-![](.gitbook/assets/image%20%281%29.png)
-
 ## Visão Lógica
 
 ### Diagrama de Classes
 
 ### Banco de Dados
-
+Visto que a aplicação utiliza Firebase como o banco de dados, que é um banco NoSQL, a estrutura difere do que é normalmente utilizado. Todos os dados são estruturados em uma árvore JSON:
+![Esquema do banco de dados](.gitbook/assets/database-schema.png)
 ###  
 
