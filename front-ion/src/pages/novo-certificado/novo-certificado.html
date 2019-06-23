@@ -13,21 +13,22 @@
           Cliente
         </ion-label>
         <ion-select [(ngModel)]="nomeCliente" name="nomeCliente">
-            <ion-option *ngFor="let cliente of arrayClientes" value="{{cliente.nome}}">
-                {{cliente.nome}}
-              </ion-option>
+          <ion-option></ion-option>
         </ion-select>
       </ion-item>
       <ion-item id="novoCertificado-select2">
         <ion-label>
           Tipo
         </ion-label>
-        <ion-select name="">
-          <ion-option>
-            Opt 1
+        <ion-select [(ngModel)]="tipoCertificado" name="tipoCertificado">
+          <ion-option value="Token">
+            Token
           </ion-option>
-          <ion-option>
-            Opt 2
+          <ion-option value="Cartão">
+            Cartão
+          </ion-option>
+          <ion-option value="Arquivo">
+            Arquivo
           </ion-option>
         </ion-select>
       </ion-item>
@@ -35,16 +36,16 @@
         <ion-label>
           Data de expiração
         </ion-label>
-        <ion-input type="date" placeholder=""></ion-input>
+        <ion-input type="date" placeholder="" [(ngModel)]="dataExpiracao" name="dataExpiracao"></ion-input>
       </ion-item>
       <ion-item id="novoCertificado-input29">
         <ion-label>
           Observações
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" placeholder="" [(ngModel)]="observacoes" name="observacoes"></ion-input>
       </ion-item>
     </ion-list>
-    <button id="novoCertificado-button13" ion-button color="stable" block>
+    <button id="novoCertificado-button13" (click)="certificadoPost()" ion-button color="stable" block>
       Criar Certificado
     </button>
   </form>

@@ -17,7 +17,8 @@ export class CalendarioPage {
     this.listaTarefas.subscribe(listaTarefas => {
       this.arrayTarefa = listaTarefas
       console.log('Dados: ', this.arrayTarefa);
-    })
+    });
   }
+  
   
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NovoCertificadoPage } from '../novo-certificado/novo-certificado';
+import { ListaCertificadosPage } from '../lista-certificados/lista-certificados';
 
 @Component({
   selector: 'page-certificados',
@@ -14,5 +15,9 @@ export class CertificadosPage {
   goToNovoCertificado(params){
     if (!params) params = {};
     this.navCtrl.push(NovoCertificadoPage);
+  }
+  goToListaCertificados(params){
+    if (!params) params = {};
+    this.navCtrl.push(ListaCertificadosPage);
   }
 }

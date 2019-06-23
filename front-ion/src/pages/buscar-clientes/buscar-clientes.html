@@ -7,9 +7,15 @@
 </ion-header>
 <ion-content padding id="page8">
   <form id="buscarClientes-form5">
-    <ion-searchbar placeholder="" name="" id="buscarClientes-search1"></ion-searchbar>
+    <ion-searchbar placeholder="" id="buscarClientes-search1" [(ngModel)]="termoBusca" name="termoBusca"></ion-searchbar>
   </form>
-  <button id="buscarClientes-button8" ion-button color="positive" block>
+  <button id="buscarClientes-button8" (click)="filtrarTest()" ion-button color="positive" block>
     Buscar
   </button>
+  <ion-list>
+    <li *ngFor="let cliente of arrayClientes">
+     {{cliente.nome}}
+    </li>
+  </ion-list>
+
 </ion-content>

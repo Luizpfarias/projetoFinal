@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http'; //httpimport
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ListaCertificadosPage } from '../pages/lista-certificados/lista-certificados';
 
 @NgModule({
   declarations: [
@@ -29,12 +30,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     NovaTarefaPage,
     CalendarioPage,
     CertificadosPage,
-    NovoCertificadoPage
+    NovoCertificadoPage,
+    ListaCertificadosPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule //hope for the best
+    HttpClientModule,//hope for the best
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -48,7 +50,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     NovaTarefaPage,
     CalendarioPage,
     CertificadosPage,
-    NovoCertificadoPage
+    NovoCertificadoPage,
+    ListaCertificadosPage
   ],
   providers: [
     StatusBar,
