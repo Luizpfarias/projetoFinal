@@ -2,14 +2,7 @@
 
 ## Modelo de Arquitetura
 
-O modelo de arquitetura adotado foi XXX \(MVC, MVP, MVVM, ...\)
-
-Explicar a lógica entre as camadas
-
-* A
-* B
-* C
-* D
+Neste projeto foi adotada a arquitetura Serverless - Nela não há a necessidade de provisionamento de recursos para a execução das funções, visto que Amazon é responsável pela alocação de recursos de acordo com a utilização.
 
 ![Arquitetura da Solu&#xE7;&#xE3;o](.gitbook/assets/image.png)
 
