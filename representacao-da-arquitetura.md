@@ -4,7 +4,7 @@
 
 Neste projeto foi adotada a arquitetura Serverless - Nela não há a necessidade de provisionamento de recursos para a execução das funções, visto que Amazon é responsável pela alocação de recursos de acordo com a utilização.
 
-![Arquitetura da Solu&#xE7;&#xE3;o](.gitbook/assets/image.png)
+![Arquitetura-sistema.png](.gitbook/assets/image.png)
 
 Explicar  as abstrações das camadas \(ou seja, cada camada e "explodir"\)
 
