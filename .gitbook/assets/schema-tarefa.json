@@ -1,0 +1,55 @@
+ 1 {
+ 2   "definitions": {},
+ 3   "$schema": "http://json-schema.org/draft-07/schema#",
+ 4   "$id": "http://example.com/root.json",
+ 5   "type": "object",
+ 6   "title": "The Root Schema",
+ 7   "required": [
+ 8     "descricao",
+ 9     "dataInicio",
+10     "dataFim",
+11     "prioridade"
+12   ],
+13   "properties": {
+14     "descricao": {
+15       "$id": "#/properties/descricao",
+16       "type": "string",
+17       "title": "The Descricao Schema",
+18       "default": "",
+19       "examples": [
+20         "Tarefa de exemplo"
+21       ],
+22       "pattern": "^(.*)$"
+23     },
+24     "dataInicio": {
+25       "$id": "#/properties/dataInicio",
+26       "type": "string",
+27       "title": "The Datainicio Schema",
+28       "default": "",
+29       "examples": [
+30         "15/04/2019"
+31       ],
+32       "pattern": "^(.*)$"
+33     },
+34     "dataFim": {
+35       "$id": "#/properties/dataFim",
+36       "type": "string",
+37       "title": "The Datafim Schema",
+38       "default": "",
+39       "examples": [
+40         "20/04/2019"
+41       ],
+42       "pattern": "^(.*)$"
+43     },
+44     "prioridade": {
+45       "$id": "#/properties/prioridade",
+46       "type": "string",
+47       "title": "The Prioridade Schema",
+48       "default": "",
+49       "examples": [
+50         "Alta"
+51       ],
+52       "pattern": "^(.*)$"
+53     }
+54   }
+55 }

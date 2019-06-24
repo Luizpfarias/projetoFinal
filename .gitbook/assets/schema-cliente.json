@@ -1,0 +1,77 @@
+ 1 {
+ 2   "definitions": {},
+ 3   "$schema": "http://json-schema.org/draft-07/schema#",
+ 4   "$id": "http://example.com/root.json",
+ 5   "type": "object",
+ 6   "title": "The Root Schema",
+ 7   "required": [
+ 8     "nome",
+ 9     "cnpj",
+10     "endereco",
+11     "nomeContato",
+12     "telefone",
+13     "email"
+14   ],
+15   "properties": {
+16     "nome": {
+17       "$id": "#/properties/nome",
+18       "type": "string",
+19       "title": "The Nome Schema",
+20       "default": "",
+21       "examples": [
+22         "Nome da empresa"
+23       ],
+24       "pattern": "^(.*)$"
+25     },
+26     "cnpj": {
+27       "$id": "#/properties/cnpj",
+28       "type": "string",
+29       "title": "The Cnpj Schema",
+30       "default": "",
+31       "examples": [
+32         "00000000000000"
+33       ],
+34       "pattern": "([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
+35     },
+36     "endereco": {
+37       "$id": "#/properties/endereco",
+38       "type": "string",
+39       "title": "The Endereco Schema",
+40       "default": "",
+41       "examples": [
+42         "Rua exemplo"
+43       ],
+44       "pattern": "^(.*)$"
+45     },
+46     "nomeContato": {
+47       "$id": "#/properties/nomeContato",
+48       "type": "string",
+49       "title": "The Nomecontato Schema",
+50       "default": "",
+51       "examples": [
+52         "Fulano"
+53       ],
+54       "pattern": "^(.*)$"
+55     },
+56     "telefone": {
+57       "$id": "#/properties/telefone",
+58       "type": "string",
+59       "title": "The Telefone Schema",
+60       "default": "",
+61       "examples": [
+62         "(51)99999999"
+63       ],
+64       "pattern": "^(.*)$"
+65     },
+66     "email": {
+67       "$id": "#/properties/email",
+68       "type": "string",
+69       "title": "The Email Schema",
+70       "default": "",
+71       "examples": [
+72         "email@dominio.com"
+73       ],
+74       "pattern": "^(.*)$"
+75     }
+76   }
+77 }

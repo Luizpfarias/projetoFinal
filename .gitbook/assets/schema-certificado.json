@@ -1,0 +1,55 @@
+ 1 {
+ 2   "definitions": {},
+ 3   "$schema": "http://json-schema.org/draft-07/schema#",
+ 4   "$id": "http://example.com/root.json",
+ 5   "type": "object",
+ 6   "title": "The Root Schema",
+ 7   "required": [
+ 8     "nomeCliente",
+ 9     "dataExpiracao",
+10     "observacoes",
+11     "tipoCertificado"
+12   ],
+13   "properties": {
+14     "nomeCliente": {
+15       "$id": "#/properties/nomeCliente",
+16       "type": "string",
+17       "title": "The Nomecliente Schema",
+18       "default": "",
+19       "examples": [
+20         "Nome do Cliente"
+21       ],
+22       "pattern": "^(.*)$"
+23     },
+24     "dataExpiracao": {
+25       "$id": "#/properties/dataExpiracao",
+26       "type": "string",
+27       "title": "The Dataexpiracao Schema",
+28       "default": "",
+29       "examples": [
+30         "10/10/2020"
+31       ],
+32       "pattern": "^(.*)$"
+33     },
+34     "observacoes": {
+35       "$id": "#/properties/observacoes",
+36       "type": "string",
+37       "title": "The Observacoes Schema",
+38       "default": "",
+39       "examples": [
+40         "Descrição do certificado"
+41       ],
+42       "pattern": "^(.*)$"
+43     },
+44     "tipoCertificado": {
+45       "$id": "#/properties/tipoCertificado",
+46       "type": "string",
+47       "title": "The Tipocertificado Schema",
+48       "default": "",
+49       "examples": [
+50         "Tipo A"
+51       ],
+52       "pattern": "^(.*)$"
+53     }
+54   }
+55 }
