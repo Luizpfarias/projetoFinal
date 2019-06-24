@@ -6,6 +6,8 @@ Esse documento tem como objetivo apresentar e descrever o projeto final, fornece
 
 ## [JSON schema](json-schema.md)
 
+## [Tabela comparativa](tabela-comparativa.md)
+
 ## [Planejamento da Release](planejamento-da-release.md)
 
 ## [Representação da Arquitetura](representacao-da-arquitetura.md) 
