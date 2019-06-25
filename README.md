@@ -8,6 +8,8 @@ Esse documento tem como objetivo apresentar e descrever o projeto final, fornece
 
 ## [Tabela comparativa](tabela-comparativa.md)
 
+## [Persona(s)](personas.md)
+
 ## [Planejamento da Release !@](planejamento-da-release.md)
 
 ## [Representação da Arquitetura](representacao-da-arquitetura.md) 
