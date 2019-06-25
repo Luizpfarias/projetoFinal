@@ -17,4 +17,5 @@ Possui amplo conhecimento em diversas áreas da contabilidade, e devido a isso s
 
 ### Objetivos
 Formar sociedade com uma colega de profissão para a criação de um novo escritório contábil com foco em clientes do setor financeiro.
-Apesar deste objetivo, Anna Laura ainda deseja manter sua carta de clientes trabalhando de forma independente.
+
+Apesar deste objetivo, Anna Laura ainda deseja continuar trabalhando com seus atuais clientes.
