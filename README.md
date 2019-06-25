@@ -10,8 +10,6 @@ Esse documento tem como objetivo apresentar e descrever o projeto final, fornece
 
 ## [Persona(s)](personas.md)
 
-## [Planejamento da Release !@](planejamento-da-release.md)
-
 ## [Representação da Arquitetura](representacao-da-arquitetura.md) 
 
 ## [Desenvolvimento da Solução](desenvolvimento-da-solucao.md)
