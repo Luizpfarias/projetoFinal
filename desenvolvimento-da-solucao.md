@@ -1,6 +1,6 @@
 # Desenvolvimento da Solução
 
-## Protótipos de Baixa(baixíssima) Fidelidade
+## Protótipos de Baixa(baixíssima?) Fidelidade
 ### Protótipo da tela de novo cliente
 ![Protótipo da criação de clientes](.gitbook/assets/prototipo-novo-cliente.jpg)
 
