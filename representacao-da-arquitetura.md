@@ -5,6 +5,7 @@
 Neste projeto foi adotada a arquitetura Serverless se utilizando do Amazon Lambda - Nela não há a necessidade de provisionamento de recursos para a execução das funções, visto que Amazon é responsável pela alocação de recursos de acordo com a utilização.
 
 ![Arquitetura do sistema](.gitbook/assets/Arquitetura-sistema.png)
+![Arquitetura do chatbot](.gitbook/assets/arquitetura-chatbot.png)
 
 ## Visão Lógica
 Em um exemplo de solicitação para listar todas as tarefas:
