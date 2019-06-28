@@ -6,6 +6,7 @@ Neste projeto foi adotada a arquitetura Serverless se utilizando do Amazon Lambd
 
 ![Arquitetura do sistema](.gitbook/assets/Arquitetura-sistema.png)
 Arquitetura do sistema
+
 ![Arquitetura do chatbot](.gitbook/assets/arquitetura-chatbot.png)
 Arquitetura do chatbot
 
