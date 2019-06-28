@@ -1,4 +1,5 @@
 # Testes e Validação
 
-Como foi validado o sistema
+Foi realizada uma entrevista seguindo o questionário abaixo
+![Questionário](.gitbook/assets/questionario-kairos.jpg)
 
