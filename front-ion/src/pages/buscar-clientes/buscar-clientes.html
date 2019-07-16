@@ -6,16 +6,23 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page8">
-  <form id="buscarClientes-form5">
-    <ion-searchbar placeholder="" id="buscarClientes-search1" [(ngModel)]="termoBusca" name="termoBusca"></ion-searchbar>
-  </form>
-  <button id="buscarClientes-button8" (click)="filtrarTest()" ion-button color="positive" block>
-    Buscar
-  </button>
-  <ion-list>
-    <li *ngFor="let cliente of arrayClientes">
-     {{cliente.nome}}
-    </li>
-  </ion-list>
-
+  <ion-grid fixed>
+    <form id="buscarClientes-form5">
+      <ion-searchbar placeholder="" id="buscarClientes-search1" [(ngModel)]="termoBusca" name="termoBusca">
+      </ion-searchbar>
+    </form>
+    <button id="buscarClientes-button8" (click)="filtrarTest()" ion-button color="positive" block>
+      Buscar
+    </button>
+    <ion-row>
+      <ion-card ion-col *ngFor="let cliente of arrayClientes" col-10 col-lg-3>
+        <p>Nome: {{cliente.nome}}</p>
+        <p>CNPJ: {{cliente.cnpj}}</p>
+        <p>Contato: {{cliente.nomeContato}}</p>
+        <p>Telefone: {{cliente.telefone}}</p>
+        <p>Email: {{cliente.email}}</p>
+        <p>Endereço: {{cliente.endereco}}</p>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>

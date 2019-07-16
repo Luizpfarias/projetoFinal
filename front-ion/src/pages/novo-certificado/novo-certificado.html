@@ -6,47 +6,49 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page12">
-  <form id="novoCertificado-form7">
-    <ion-list id="novoCertificado-list6">
-      <ion-item id="novoCertificado-select1">
-        <ion-label>
-          Cliente
-        </ion-label>
-        <ion-select [(ngModel)]="nomeCliente" name="nomeCliente">
-          <ion-option></ion-option>
-        </ion-select>
-      </ion-item>
-      <ion-item id="novoCertificado-select2">
-        <ion-label>
-          Tipo
-        </ion-label>
-        <ion-select [(ngModel)]="tipoCertificado" name="tipoCertificado">
-          <ion-option value="Token">
-            Token
-          </ion-option>
-          <ion-option value="Cartão">
-            Cartão
-          </ion-option>
-          <ion-option value="Arquivo">
-            Arquivo
-          </ion-option>
-        </ion-select>
-      </ion-item>
-      <ion-item id="novoCertificado-input28">
-        <ion-label>
-          Data de expiração
-        </ion-label>
-        <ion-input type="date" placeholder="" [(ngModel)]="dataExpiracao" name="dataExpiracao"></ion-input>
-      </ion-item>
-      <ion-item id="novoCertificado-input29">
-        <ion-label>
-          Observações
-        </ion-label>
-        <ion-input type="text" placeholder="" [(ngModel)]="observacoes" name="observacoes"></ion-input>
-      </ion-item>
-    </ion-list>
-    <button id="novoCertificado-button13" (click)="certificadoPost()" ion-button color="stable" block>
-      Criar Certificado
-    </button>
-  </form>
+  <ion-grid fixed>
+    <form id="novoCertificado-form7">
+      <ion-list id="novoCertificado-list6">
+        <ion-item id="novoCertificado-select1">
+          <ion-label>
+            Cliente
+          </ion-label>
+          <ion-select [(ngModel)]="nomeCliente" name="nomeCliente">
+            <ion-option></ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item id="novoCertificado-select2">
+          <ion-label>
+            Tipo
+          </ion-label>
+          <ion-select [(ngModel)]="tipoCertificado" name="tipoCertificado">
+            <ion-option value="Token">
+              Token
+            </ion-option>
+            <ion-option value="Cartão">
+              Cartão
+            </ion-option>
+            <ion-option value="Arquivo">
+              Arquivo
+            </ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item id="novoCertificado-input28">
+          <ion-label>
+            Data de expiração
+          </ion-label>
+          <ion-input type="date" placeholder="" [(ngModel)]="dataExpiracao" name="dataExpiracao"></ion-input>
+        </ion-item>
+        <ion-item id="novoCertificado-input29">
+          <ion-label>
+            Observações
+          </ion-label>
+          <ion-input type="text" placeholder="" [(ngModel)]="observacoes" name="observacoes"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button id="novoCertificado-button13" (click)="certificadoPost()" ion-button color="stable" block>
+        Criar Certificado
+      </button>
+    </form>
+  </ion-grid>
 </ion-content>

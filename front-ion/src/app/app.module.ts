@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http'; //httpimport
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ListaCertificadosPage } from '../pages/lista-certificados/lista-certificados';
+import { HomePage } from '../pages/home/home';
+import { ListaCertificadosPageModule } from '../pages/lista-certificados/lista-certificados.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ListaCertificadosPage } from '../pages/lista-certificados/lista-certifi
     CalendarioPage,
     CertificadosPage,
     NovoCertificadoPage,
-    ListaCertificadosPage
+    ListaCertificadosPage,
+    HomePage,
+    ListaCertificadosPageModule
   ],
   imports: [
     BrowserModule,

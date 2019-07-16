@@ -6,16 +6,18 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page10">
-  <h1>Tarefas</h1>
-
-  <ion-list>
-    <li *ngFor="let tarefa of arrayTarefa">
-      {{tarefa.dataInicio}}, {{tarefa.dataFim}}, {{tarefa.descricao}}
-    </li>
-  </ion-list>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-card ion-col *ngFor="let tarefa of arrayTarefa" col-10 col-lg-3>
+        <p>Data inicial: {{tarefa.dataInicio}}</p>
+        <p>Data final: {{tarefa.dataFim}}</p>
+        <p>Descrição: {{tarefa.descricao}}</p>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 
 <!--<li *ngFor="let tarefa of arrayTarefa">
     {{tarefa.dataInicio}}, {{tarefa.dataFim}}, {{tarefa.descricao}}
   </li>
---> 
+-->

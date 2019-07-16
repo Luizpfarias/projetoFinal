@@ -14,3 +14,52 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+
+// Desktop
+ion-header .toolbar {
+    margin: auto;
+   }
+
+   //mediaquery ajusta de acordo com a largura da tela - se apertar demais = mobile
+   @media (min-width: map-get($grid-breakpoints, lg)) {
+    ion-navbar.toolbar,
+    ion-header .toolbar[fixed],
+    ion-footer .toolbar[fixed],
+    ion-tabs .tabbar {
+      margin: 0;
+      padding-right: calc((100% - #{map-get($grid-max-widths, lg)}) / 2);
+      padding-left: calc((100% - #{map-get($grid-max-widths, lg)}) / 2);
+    }
+    .button{
+      width: 40%;
+    }
+    //adicionado background
+    .scroll-content{
+      background-image: url('../assets/imgs/office-background.jpg');
+      background-position: center;
+    }
+
+    //linhas diferentes p versão desktop
+    ion-card:nth-of-type(odd) {
+      background-color: #e9e9f9 ;
+      margin: 5px 5px 5px 5px;
+    }
+    ion-card:nth-of-type(even) {
+      background-color:  #9bf1a2;
+      margin: 5px 5px 5px 5px;
+    }
+
+    //efeito na taskbar
+    .tabs-md .tab-button{
+      transition: transform .2s;
+      //background-color: red;
+
+    }
+    .tabs-md .tab-button:hover{
+      transform: scale(1.3);
+    }
+   }
+
+   

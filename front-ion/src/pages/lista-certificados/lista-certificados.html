@@ -15,7 +15,11 @@
 
   <ion-list>
     <li *ngFor="let certificado of arrayCertificados">
-      {{certificado.dataExpiracao}}, {{certificado.nomeCliente}}, {{certificado.observacoes}}, {{certificado.tipoCertificado}}
+      <p>Data de expiração: {{certificado.dataExpiracao}}</p>
+      <p>Nome do cliente: {{certificado.nomeCliente}}</p>
+      <p>Tipo de certificado: {{certificado.tipoCertificado}}</p>
+      <p>Observações: {{certificado.observacoes}}</p>
+       
     </li>
   </ion-list>
 </ion-content>
