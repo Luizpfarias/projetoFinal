@@ -11,16 +11,14 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>Certificados</h1>
-
-  <ion-list>
-    <li *ngFor="let certificado of arrayCertificados">
-      <p>Data de expiração: {{certificado.dataExpiracao}}</p>
-      <p>Nome do cliente: {{certificado.nomeCliente}}</p>
-      <p>Tipo de certificado: {{certificado.tipoCertificado}}</p>
-      <p>Observações: {{certificado.observacoes}}</p>
-       
-    </li>
-  </ion-list>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-card *ngFor="let certificado of arrayCertificados" col-10 col-lg-3>
+        <p>Data de expiração: {{certificado.dataExpiracao}}</p>
+        <p>Nome do cliente: {{certificado.nomeCliente}}</p>
+        <p>Tipo de certificado: {{certificado.tipoCertificado}}</p>
+        <p>Observações: {{certificado.observacoes}}</p>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-
